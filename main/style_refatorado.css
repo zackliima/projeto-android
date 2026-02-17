@@ -20,6 +20,10 @@
 
 /* === Reset === */
 
+* {
+  outline: 1px solid red;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -33,7 +37,7 @@ header {
     text-shadow: 2px 2px 2px black;
     margin: 0;
     text-align: center;
-    padding: 10px 10px 0px 10px;
+    padding: 1px;
 }
 
 .header-tittle {
@@ -82,9 +86,10 @@ main {
 
 section {
     background-color: white;
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
     margin: auto;
-    padding: 10px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;   /* centraliza imagens e vídeo */
@@ -99,6 +104,18 @@ main section picture img {
     height: auto;
     display: block;
     margin: 1rem auto;
+}
+
+.img-bugdroid {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.img-bugdroid img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* container para o iframe do YouTube */
@@ -159,7 +176,7 @@ p {
 
 .video-container {
     background-image: linear-gradient(rgba(63, 182, 36, 0.623), rgba(6, 99, 3, 0.884));
-    padding: 10px;
+    padding: 0px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -185,6 +202,7 @@ a:hover {
 .want-to-learn {
     background-color: rgba(166, 236, 190, 0.315);
     margin: 20px 10px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.185);
 }
